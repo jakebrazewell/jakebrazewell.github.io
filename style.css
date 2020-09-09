@@ -362,8 +362,20 @@ html {
         
     }
 
+    .about-icon {
+        left: 50%;
+    }
+
+    .fa-js-square {
+        left: -10%;
+    }
+
     .hex {
         margin-left: 5%;
+    }
+
+    .hex-2 {
+        margin-left: -60%;
     }
 
     .about-icon {
@@ -588,5 +600,111 @@ html {
 
   }
 
+
+  @media only screen and (min-width: 1100px) 
+  {
+
+    #heading-text {
+        left: 29%;
+        
+    }
+
+    .head-h4 {
+        left: 36%;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1250px) 
+ 
+  {
+    .head-h4 {
+        left: 30%;
+    }
+
+    .about-section {
+        padding-top: 5%;
+    }
+
+    }
+
+
+    @media only screen and (min-width: 1250px) {
+
+        .hexagons {
+            top: -70%;
+        }
+  
+        .hexagon-text {
+            top: -70%;
+        }
+  
+        .skills-table {
+            top: -80%;
+        }
+  
+    }
+
+    @media only screen and (min-width: 1600px) {
+
+        #heading-text {
+            left: 32%;
+            
+        }
+    
+        .head-h4 {
+            left: 33%;
+        }
+
+        .about-section {
+            padding-top: 0;
+        }
+
+    }
+
+
+  @media only screen and (min-width: 1900px)
+
+  {
+
+    .head-h4 {
+        left: 36%;
+    }
+      #heading-text {
+          left: 35%;
+      }
+
+      .hexagons {
+          top: -80%;
+      }
+
+      .hexagon-text {
+          top: -80%;
+      }
+
+      .skills-table {
+          top: -80%;
+      }
+
+
+      .about-heading-h1 {
+          margin-left: 0;
+      }
+
+      .about-heading-h1::after {
+          left: 1%;
+      }
+
+      .about-p-1 {
+          font-size: 2rem;
+          left: -5%;
+      }
+
+      .about-section {
+        padding-top: 0;
+    }
+    
+  }
 
 
