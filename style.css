@@ -282,7 +282,7 @@ html {
 
 .image-col {
     padding: 0 !important;
-    border-bottom: 10px solid #182327;
+    border-bottom: 50px solid #E6E4DD;
 }
 
 
@@ -584,6 +584,7 @@ html {
 
     .image-col {
         border: 5px solid #E6E4DD;
+        margin-bottom: 20px;
     }
 
     .portfolio-image {
@@ -598,6 +599,57 @@ html {
 
 
 
+  }
+
+  @media only screen and (min-width: 1000px) and (max-height: 800px) {
+    #heading-text {
+        font-size: 5rem;
+        margin-left: 23%;
+    }
+
+    .head-h4 {
+        margin-top: -10%;
+    }
+
+
+    .head-circle {
+        height: 70px;
+        width: 70px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+
+    .inside-circle {
+
+        height: 55px;
+        width: 55px;
+        position: relative;
+        top: 10%;
+        left: 10%;
+        border: 1px solid white;
+        border-radius: 50%;
+
+    }
+
+    .circle-icon {
+        font-size: 2rem;
+    }
+
+    .circle-1 {
+        left: 28%;
+    }
+
+    .circle-2 {
+        left: 47%;
+    }
+
+    .circle-3 {
+        left: 65%;
+    }
+
+    .about-section {
+        height: 200vh;
+    }
   }
 
 
@@ -629,6 +681,8 @@ html {
 
     }
 
+    
+
 
     @media only screen and (min-width: 1250px) {
 
@@ -643,7 +697,91 @@ html {
         .skills-table {
             top: -80%;
         }
+
+        .hex-2 {
+            margin-left: 15px;
+        }
+
+        .fa-js-square {
+            margin-left: 75px;
+        }
+
+        .fa-desktop {
+            margin-left: 60%;
+        }
   
+    }
+
+    @media only screen and (min-width: 1350px) {
+        .hexagons {
+            top: -30%;
+        }
+  
+        .hexagon-text {
+            top: -30%;
+        }
+  
+        .skills-table {
+            top: -30%;
+        }
+
+        #heading-text {
+            left: 10%;
+        }
+
+        .head-h4 {
+            margin: 0;
+        }
+
+        .circle-1 {
+            left: 30%;
+        }
+    
+        .circle-2 {
+            left: 48.5%;
+        }
+    
+        .circle-3 {
+            left: 67%;
+        }
+    }
+
+    @media only screen and (min-width: 1300px) and (max-height: 800px) {
+        .about-section {
+            height: 100vh;
+        }
+
+        .hexagons {
+            top: -70%;
+        }
+  
+        .hexagon-text {
+            top: -70%;
+        }
+  
+        .skills-table {
+            top: -80%;
+        }
+
+    }
+
+    @media only screen and (min-width: 1400px) {
+
+        #heading-text {
+            left: 30%;
+        }
+
+        .hexagons {
+            top: -80%;
+        }
+  
+        .hexagon-text {
+            top: -80%;
+        }
+  
+        .skills-table {
+            top: -90%;
+        }
     }
 
     @media only screen and (min-width: 1600px) {
@@ -661,6 +799,26 @@ html {
             padding-top: 0;
         }
 
+        .hexagons {
+            top: -80%;
+        }
+  
+        .hexagon-text {
+            top: -80%;
+        }
+  
+        .skills-table {
+            top: -90%;
+        }
+
+        .aboout-heading-h1 {
+            margin-top: 200px;
+        }
+
+        .about-p-1 {
+            font-size: 2rem;
+        }
+
     }
 
 
@@ -676,15 +834,15 @@ html {
       }
 
       .hexagons {
-          top: -80%;
+          top: -70%;
       }
 
       .hexagon-text {
-          top: -80%;
+          top: -70%;
       }
 
       .skills-table {
-          top: -80%;
+          top: -70%;
       }
 
 
