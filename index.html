@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio site</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
@@ -12,9 +13,11 @@
 
         <div id="particles-js">
                 
-            <div id="heading-div">
+            <div id="heading-div row">
+              <div class="headings col-12">
                 <h1 id="heading-text">Jake Brazewell</h1>
                 <h4 class="head-h4">Web Developer & Technology Enthusiast</h4>
+              </div>
                 <div class="head-circle circle-1">
                     <div class="inside-circle ic-1"><a href="tel:07808831983"> <i class="fas fa-mobile-alt circle-icon ci-1"></i></a></div>
                 </div>
@@ -28,74 +31,82 @@
             </div>
         </div>
 
-        <div class="container about-section">
-          <div class="row">
-            <div class="col-sm-12 about-heading">
-              <img class="selfie" src="/IMG/placeholder.png" alt="Photo of me">
+        <div class="container-fluid about-section">
+          <div class="row justify-content-around">
+            <div class="col-lg-5">
+              <div class="row justify-content-around text-side">
+                <div class="col-6 about-heading">
+                  <img class="selfie" src="/IMG/jake.png" alt="Photo of me">
+                </div>
+                <p class="about-p-1"> <strong>A passion for all things digital.</strong> </p> 
+                <p class="about-p-2"> Growing up in beautiful Cornwall, I have not had the typical route to starting life as a freelance web developer. I am entirely self-taught, teaching myself to code in my free time, helping friends and family with digital projects. Over the years, I gained a bunch of experience at UWE Bristol, also with local businesses and decided to turn to freelance development. </p>  
             </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="row justify-content-around hexagons">
+                <div class="col-6 col-lg-3">
+                  <div class="row">
+                    <div class="col-12 ">
+                      <img class="about-icon" src="/IMG/desktop-hex.png" alt="desktop icon">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="row ">
+                    <div class="col-12 ">
+                      <img class="about-icon text-center" src="/IMG/js-hex.png" alt="javascript icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-around hexagon-text">
+                <div class="col-6 col-lg-5">
+                  <p class="about-p">I build responsive websites that are easy to use and look good.</p>
+                </div>
+                <div class="col-6 col-lg-5">
+                  <p class="about-p">I also make web applications with JavaScript</p>
+                </div>
+              </div>
+              <div class="skills-table">
+                  <img class="table-image" src="/IMG/skills-table.png" alt="skills table">
+              </div>
+
+
+
+
+
           </div>
-          <p class="about-p-1"> <strong>A passion for all things digital.</strong> <br> <br> Growing up in beautiful Cornwall, I have not had the typical route to starting life as a freelance web developer. I am entirely self-taught, teaching myself to code in my free time, helping friends and family with digital projects. Over the years, I gained a bunch of experience at UWE Bristol, also with local businesses and decided to turn to freelance development. </p>
-          <div class="row justify-content-between hexagons">
-            <div class="col-sm-5 col-lg-3">
-              <img class="hex hex-1" src="/IMG/hexagon.gif" alt="">
-              <i class="fas fa-desktop about-icon"></i>
-            </div>
-            <div class="col-sm-5 col-lg-3">
-              <img class="hex hex-2" src="/IMG/hexagon.gif" alt="">
-              <i class="fab fa-js-square about-icon"></i>
-            </div>
+
+          
+
           </div>
-          <div class="row justify-content-between hexagon-text">
-            <div class="col-sm-5 col-lg-5">
-              <p class="about-p">I build responsive websites that are easy to use and look good.</p>
-            </div>
-            <div class="col-sm-5 col-lg-5">
-              <p class="about-p">I also make web applications with JavaScript</p>
-            </div>
-          </div>
-          <div class="skills-table">
-            <div class="row skill-row skill-html">
-              <div class="col-sm-2 skill-box name-fill"><p class="skill-text"> HTML </p></div>
-              <div class="col-sm-8 skill-box skill-fill"></div>
-              <div class="col-sm-2 skill-box empty-fill"></div>
-            </div>
-            <div class="row skill-row skill-css">
-              <div class="col-sm-2 skill-box name-fill"> <p class="skill-text"> CSS </p></div>
-              <div class="col-sm-8 skill-box skill-fill"></div>
-              <div class="col-sm-2 skill-box empty-fill"></div>
-            </div>
-            <div class="row skill-row skill-bootstrap">
-              <div class="col-sm-2 skill-box name-fill"> <p class="skill-text"> Bootstrap </p></div>
-              <div class="col-sm-7 skill-box skill-fill"></div>
-              <div class="col-sm-3 skill-box empty-fill"></div>
-            </div>
-            <div class="row skill-row skill-js">
-              <div class="col-sm-2 skill-box name-fill"> <p class="skill-text"> JavaScript </p></div>
-              <div class="col-sm-5 skill-box skill-fill"></div>
-              <div class="col-sm-5 skill-box empty-fill"></div>
-            </div>
-          </div>
+          
+
+        
         </div>
 
         <div class="container-fluid portfolio-section">
-          <div class="row">
+          <div class="row justify-content-around">
             <div class="col-sm-12">
               <h2 class="portfolio-header">PROJECTS</h2>
             </div>
-            <div class="col-sm-12 col-lg-6 image-col">
-              <a href="http://danser-hydraulics.co.uk/"><img class="portfolio-image" src="/IMG/danser-hydraulics.png" alt="danser hydraulics"></a>
+            <div class="row justify-content-around portfolio-row">
+              <div class="col-sm-12 col-lg-5 image-col">
+                <a href="http://danser-hydraulics.co.uk/"><img class="portfolio-image" src="/IMG/danser-hydraulics.png" alt="danser hydraulics"></a>
+              </div>
+              <div class="col-sm-12 col-lg-5 image-col">
+                <a href="http://classfiresafety.co.uk/"><img class="portfolio-image" src="/IMG/classfiresafety.png" alt="classfire safety"></a>
+              </div>
             </div>
-            <div class="col-sm-12 col-lg-6 image-col">
-              <a href="http://classfiresafety.co.uk/"><img class="portfolio-image" src="/IMG/classfiresafety.png" alt="classfire safety"></a>
+            <div class="row justify-content-around portfolio-row">
+              <div class="col-sm-12 col-lg-5 image-col">
+                <img class="portfolio-image" src="/IMG/valet-bay.png" alt="classfire safety">
+              </div>
+              <div class="col-sm-12  col-lg-5 image-col">
+                <img class="portfolio-image" src="/IMG/budgety.png" alt="classfire safety">
+              </div>
             </div>
-            <div class="col-sm-12 col-lg-6 image-col">
-              <img class="portfolio-image" src="/IMG/valet-bay.png" alt="classfire safety">
-            </div>
-            <div class="col-sm-12  col-lg-6 image-col">
-              <img class="portfolio-image" src="/IMG/budgety.png" alt="classfire safety">
-            </div>
-            
-            
           </div>
         </div>
 

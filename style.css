@@ -13,46 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.main-navbar {
-    height: 200px !important;
-    background-color: #0b1012 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100vw;
-    border-bottom: 2px solid #9D967C;
-
-
-}
-
-.navbar-collapse {
-    background-color: #0b1012;
-    border-bottom: 2px solid #9D967C;
-    width: 100%;
-}
-
-.navbar-collapse li {
-    font-size: 3rem;
-    padding-left: 5%;
-}
-
-.navbar-collapse a {
-    color: #9D967C !important;
-}
-
-.navbar-toggler {
-    height: 150px;
-    width: 150px;
-    margin-top: 2%;
-}
-
-.navbar-toggler-icon {
-    height: 100px;
-    width: 100px;
-    font-size: 4rem;
-}
-
-
 #particles-js {
     height: 100vh;
     width: 100vw;
@@ -66,61 +26,62 @@ html {
     color: #9D967C;
 }
 
+.headings {
+    position: absolute !important;
+    top: 30%;
+}
+
 #heading-text {
     color: #9D967C;
     text-align: center;
-    vertical-align: middle;
     opacity: 0.9;
-    position: absolute;
-    top: 25%;
-    left: 2%;
-    font-size: 10em;
+    font-size: 2.5em;
     font-family: 'Playfair Display', serif;
     font-weight: 50;
+
 
 }
 
 .head-h4 {
     color: #d4d4cf;
-    position: absolute;
-    top: 50%;
-    left: 21%;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
+
 }
 
 .head-circle {
-    height: 130px;
-    width: 130px;
+    height: 70px;
+    width: 70px;
     border: 1px solid white;
     border-radius: 50%;
 }
 
 .inside-circle {
-    height: 115px;
-    width: 115px;
+    height: 60px;
+    width: 60px;
     position: relative;
-    top: 5%;
-    left: 5%;
+    top: 6%;
+    left: 6%;
     border: 1px solid white;
     border-radius: 50%;
 }
 
 .circle-1 {
     position: absolute;
-    top: 60%;
-    left: 26.5%;
+    top: 55%;
+    left: 10%;
 }
 
 .circle-2 {
     position: absolute;
-    top: 60%;
-    left: 44.5%;
+    top: 55%;
+    left: 40%;
 }
 
 .circle-3 {
     position: absolute;
-    top: 60%;
-    left: 62.5%;
+    top: 55%;
+    left: 70%;
 }
 
 .circle-icon {
@@ -128,7 +89,7 @@ html {
     position: relative;
     top: 20%;
     left: 20%;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .ci-1 {
@@ -142,8 +103,8 @@ html {
     opacity: 0.9;
     position: absolute;
     top: 75%;
-    left: 45%;
-    font-size: 8em;
+    left: 43%;
+    font-size: 4em;
     font-weight: 30;
 }
 
@@ -163,24 +124,19 @@ html {
 /* About Section */ 
 
 .about-section {
-    height: 140vh;
+    height: 250vh;
 }
 
-
-.about-heading {
-    font-size: 5rem;
-    padding-top: 10%;
-    padding-bottom: 3%;
-    color: #9D967C;
-    margin-bottom: 200px;
-    
+.about-p-2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
 }
 
 .selfie {
-    margin: 0 22%;
-    margin-top: 5%;
-    height: 300px;
+    margin-top: 35%;
+    height: 125px;
 }
+
 
 .about-heading-h1 {
     font-size: 5rem;
@@ -188,81 +144,46 @@ html {
     
 }
 
-.about-heading-h1::after {
-    content: '';
-    position: absolute;
-    left: 32%;
-    display: inline-block;
-    height: 1em;
-    width: 250px;
-    border-bottom: 10px solid #182327;
-    margin-top: 50px;
-    
+
+
+.hexagon-text {
+    text-align: center;
+    margin-top: -10%;
 }
 
-.hex {
-    height: 250px;
-    margin-left: -10%;
-    z-index: 1;
-}
+
 
 .about-icon {
-    font-size: 6rem;
-    position: relative;
-    left: 30%;
-    bottom: 50%;
-}
-
-.about-p {
-    margin-top: -20%;
-    font-size: 1.7rem;
-    font-weight: bold;
-    text-align: center;
-    
+    height: 80px;
+    margin-bottom: 50px;
+    margin-left: 15%;
 }
 
 .about-p-1 {
-    margin-top: -10%;
+    margin-top: 20%;
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 75px;
+    text-align: center;
+
+}
+
+.about-p-2 {
+    font-size: 1.2rem;
+    font-weight: 400;
     margin-bottom: 100px;
     text-align: center;
 
 }
 
 .skills-table {
-    margin-top: 10%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 80%;
 }
 
-.skill-row {
-    width: 95%;
-    height: 50px;
-    border: 1px solid black;
-    margin-bottom: 20px;
-}
-
-.skill-box {
-    border: 1px solid black;
-}
-
-.skill-fill {
-    background-color: #182327;
-}
-
-.name-fill {
-    background-color: #9D967C;
-    color: #182327;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.skill-text {
-    margin-top: 10%;
-    font-weight: bold;
-}
-
-.empty-fill {
-    background-color: #d4d4cf;
+.table-image {
+    width: 90vw;
 }
 
 
@@ -276,10 +197,10 @@ html {
 }
 
 .portfolio-header {
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
     padding-top: 10%;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
 
 }
@@ -287,12 +208,12 @@ html {
 .portfolio-header::after {
     content: '';
     position: absolute;
-    left: 32%;
+    left: 26%;
     display: inline-block;
     height: 1em;
-    width: 350px;
+    width: 150px;
     border-bottom: 10px solid #9D967C;
-    margin-top: 50px;
+    margin-top: 30px;
     
 }
 
@@ -342,6 +263,34 @@ html {
 
 }
 
+@media only screen and (min-height: 600px) {
+    .about-section {
+        height: 200vh;
+    }
+}
+
+@media only screen and (min-height: 700px) {
+    .about-section {
+        height: 180vh;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+
+
+    .about-icon {
+        height: 80px;
+        margin-bottom: 50px;
+        margin-left: 20%;
+    }
+
+    .portfolio-header::after {
+        
+        left: 32%;
+
+    }
+}
+
 @media only screen and (min-width: 750px) {
 
     .about-section {
@@ -349,308 +298,203 @@ html {
     }
 
     #heading-text {
-        position: absolute;
-        top: 20%;
-    }
-
-}
-
-
-@media only screen and (min-width: 1020px) {
-
-
-    .about-section {
-        height: 180vh;
-    }
-
-    
-    .about-heading-h1::after {
-        content: '';
-        position: absolute;
-        left: 36%;
-        display: inline-block;
-        height: 1em;
-        width: 280px;
-        border-bottom: 10px solid #182327;
-        margin-top: 50px;
-        
-    }
-
-    .about-icon {
-        left: 50%;
-    }
-
-    .fa-js-square {
-        left: -10%;
-    }
-
-    .hex {
-        margin-left: 5%;
-    }
-
-    .hex-2 {
-        margin-left: -60%;
-    }
-
-    .about-icon {
-        margin-left: 5%;
-    }
-  
-}
-
-
-
-
-@media only screen and (min-width: 1100px) {
-    
-
-    .main-navbar {
-        display: none;
-    }
-
-    .navbar {
-        display: none;
-    }
-        
-    #heading-text {
-        color: #9D967C;
-        text-align: center;
-        vertical-align: middle;
-        opacity: 0.9;
-        position: absolute;
-        top: 15%;
-        left: 27%;
-        font-size: 6em;
-        font-family: 'Playfair Display', serif;
-        font-weight: 50;
-
+        font-size: 5rem;
     }
 
     .head-h4 {
-        color: #d4d4cf;
-        position: absolute;
-        top: 40%;
-        left: 30%;
+        font-size: 1.5rem;
     }
 
     .head-circle {
-        height: 70px;
-        width: 70px;
-        border: 1px solid white;
-        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        
     }
-
+    
     .inside-circle {
-        height: 55px;
-        width: 55px;
-        position: relative;
-        top: 10%;
-        left: 10%;
-        border: 1px solid white;
-        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        top: 4%;
+        left: 4.5%;
     }
-
+    
     .circle-1 {
         position: absolute;
-        top: 60%;
-        left: 41.2%;
+        top: 55%;
+        left: 14%;
     }
-
+    
     .circle-2 {
         position: absolute;
-        top: 60%;
-        left: 48.5%;
+        top: 55%;
+        left: 44%;
     }
-
+    
     .circle-3 {
         position: absolute;
-        top: 60%;
-        left: 55.8%;
+        top: 55%;
+        left: 74%;
     }
-
+    
     .circle-icon {
         color: #9D967C;
         position: relative;
         top: 20%;
         left: 20%;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .ci-1 {
         left: 30%;
     }
 
+
     #arrow-icon {
-        color: #9D967C;
-        text-align: center;
-        vertical-align: middle;
-        opacity: 0.9;
-        position: absolute;
-        top: 75%;
-        left: 49%;
-        font-size: 4em;
-        font-weight: 30;
+        left: 47%;
+    }
+    
+
+    .selfie {
+        height: 250px;
     }
 
-    .about-heading-h1::after {
-        content: '';
-        position: absolute;
-        left: 6.5%;
-        display: inline-block;
-        height: 1em;
-        width: 170px;
-        border-bottom: 10px solid #182327;
-        margin-top: 40px;
-        
+
+    .about-icon {
+        height: 120px;
+        margin-bottom: 100px;
+        margin-left: 30%;
     }
+
+    .about-p-2 {
+        font-size: 1.4rem;
+    }
+    .about-p {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-header::after {
+        
+        left: 40%;
+
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 1020px) {
 
     .about-section {
-        height: 80vh;
-        padding-top: 2vh;
+        height: 50vh;
     }
 
-    .about-heading {
-        display: relative;
-        top: 5%;
-        left: 5%;
-        padding-top: 5%;
+    .portfolio-section {
+        height: 120vh;
     }
 
-    .about-heading-h1 {
-        font-size: 3rem;
-        text-align: left;
-        margin-left: 5vw;
+    .about-icon {
+        margin-top: 140%;
+        padding-right: 10%;
+        margin-left: -20%;
+    
+    }
+
+    .hexagons {
+        margin-right: 10%;
+    }
+
+    .selfie {
+        height: 150px;
+        margin-top: 70%;
+        margin-bottom: 0;
         
     }
 
     .about-p-1 {
         font-size: 1.5rem;
-        width: 400px;
-        position: relative;
-        top: 0%;
-        left: 0%;
+        margin-top: 8%;
+        margin-bottom: 6%;
+        
     }
 
-    .hexagons {
-        width: 30%;
-        position: relative;
-        top: -90%;
-        left: 60%;
-    }
-
-    .hex {
-        height: 100px;
-        width: 150px;
-    }
-
-    .about-icon {
-        font-size: 2.5rem;
-        margin-left: 70%;
-    }
-
-    .skills-table {
-        height: 400px;
-        width: 50%;
-        position: relative;
-        top: -100%;
-        left: 55%;
-    }
-
-    .skill-row {
-        height: 40px;
-        margin-bottom: 20px;
-    }
-
-    .skill-box {
-        height: 40px;
-    }
-
-    .hexagon-text {
-        width: 40%;
-        position: relative;
-        top: -90%;
-        left: 60%;
+    .about-p-2 {
+        font-size: 1.2rem;
     }
 
     .about-p {
         font-size: 1rem;
     }
 
-    .skill-text {
-        font-size: 0.8rem;
-    }
-
-    .portfolio-header {
-        font-size: 3rem;
+    .table-image {
+        width: 40vw;
+        margin-left: 5%;
     }
 
     .portfolio-header::after {
-        content: '';
-        position: absolute;
-        left: 41.5%;
-        display: inline-block;
-        height: 1em;
-        width: 230px;
-        border-bottom: 10px solid #9D967C;
-        margin-top: 30px;
-        
+        left: 42%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-height: 1040px) {
+
+    #arrow-icon {
+        left: 46%;
     }
 
-    .image-col {
-        border: 5px solid #E6E4DD;
-        margin-bottom: 20px;
+    .about-section {
+        height: 80vh;
     }
 
-    .portfolio-image {
-        height: 100%;
-        width: 100%;
-    }
-
-    .portfolio-section {
-        height: 150vh;
-    }
-
-
-
-
-  }
-
-  @media only screen and (min-width: 1000px) and (max-height: 795px) {
-    #heading-text {
-        font-size: 5rem;
-        margin-left: 23%;
-    }
-
-    .head-h4 {
-        margin-top: -10%;
-    }
-
-
-    .head-circle {
-        height: 70px;
-        width: 70px;
-        border: 1px solid white;
-        border-radius: 50%;
-    }
-
-    .inside-circle {
-
-        height: 55px;
-        width: 55px;
-        position: relative;
-        top: 10%;
-        left: 10%;
-        border: 1px solid white;
-        border-radius: 50%;
+    .selfie {
+        height: 130px;
+        margin-bottom: 0px;
+        margin-right: 100px;
+        margin-top: 55%;
 
     }
 
-    .circle-icon {
-        font-size: 2rem;
+    .about-p-1 {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
     }
 
+    .about-p-2 {
+        font-size: 1rem;
+    }
+
+    .about-icon {
+        height: 75px;
+        margin-top: 135%;
+        margin-bottom: 70px;
+    }
+
+    .about-p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .table-image {
+        width: 40vw;
+        margin-left: 5%;
+
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 1100px) and (min-height: 1200px) {
+    .portfolio-row {
+        width: 90%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
     .circle-1 {
-        left: 28%;
+        left: 27%;
     }
 
     .circle-2 {
@@ -658,256 +502,63 @@ html {
     }
 
     .circle-3 {
-        left: 65%;
+        left: 67%;
     }
 
+    #arrow-icon {
+        left: 48.5%;
+    }
+
+    .selfie {
+        margin-bottom: 5%;
+    }
+
+    .about-icon {
+        margin-top: 110%;
+    }
+
+    .about-p-2 {
+        font-size: 1.1rem;
+    }
+
+    .portfolio-header::after {
+        left: 44.5%;
+    }
+
+    .about-icon {
+        margin-left: 10%;
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
     .about-section {
-        height: 200vh;
-    }
-  }
-
-
-  @media only screen and (min-width: 1100px) 
-  {
-
-    #heading-text {
-        left: 29%;
-        
+        height: 80vh;
     }
 
-    .head-h4 {
-        left: 36%;
+    .selfie {
+        height: 200px;
+        margin-top: 60%;
     }
 
-
-  }
-
-
-    @media only screen and (min-width: 1250px) {
-
-        .hexagons {
-            top: -70%;
-        }
-  
-        .hexagon-text {
-            top: -70%;
-        }
-  
-        .skills-table {
-            top: -80%;
-        }
-
-        .hex-2 {
-            margin-left: 15px;
-        }
-
-        .fa-js-square {
-            margin-left: 75px;
-        }
-
-        .fa-desktop {
-            margin-left: 60%;
-        }
-
-        .head-h4 {
-            left: 30%;
-        }
-    
-        .about-section {
-            padding-top: 5%;
-        }
-  
+    .about-p-2 {
+        font-size: 1.3rem;
     }
 
-    @media only screen and (min-width: 1350px) {
-        .hexagons {
-            top: -30%;
-        }
-  
-        .hexagon-text {
-            top: -30%;
-        }
-  
-        .skills-table {
-            top: -30%;
-        }
-
-        #heading-text {
-            left: 10%;
-        }
-
-        .head-h4 {
-            margin: 0;
-        }
-
-        .circle-1 {
-            left: 30%;
-        }
-    
-        .circle-2 {
-            left: 48.5%;
-        }
-    
-        .circle-3 {
-            left: 67%;
-        }
+    .text-side {
+        margin-right: 50%;
     }
 
-    @media only screen and (min-width: 1250px) and (max-height: 795px) {
-
-        .hexagons {
-            top: -20%;
-        }
-  
-        .hexagon-text {
-            top: -20%;
-        }
-  
-        .skills-table {
-            top: -20%;
-        }
+    .portfolio-header::after {
+        left: 45.5%;
     }
+}
 
-    @media only screen and (max-width: 1290px) and (max-height: 805px) {
-        .hexagons {
-            top: -100%;
-        }
+
+
+
+
+
+
   
-        .hexagon-text {
-            top: -100%;
-        }
-  
-        .skills-table {
-            top: -100%;
-        }
-    }
-
-    
-
-    @media only screen and (min-width: 1300px) and (max-height: 790px) {
-        .about-section {
-            height: 100vh;
-        }
-
-        .hexagons {
-            top: -70%;
-        }
-  
-        .hexagon-text {
-            top: -70%;
-        }
-  
-        .skills-table {
-            top: -80%;
-        }
-
-    }
-
-    @media only screen and (min-width: 1400px) {
-
-        #heading-text {
-            left: 30%;
-        }
-
-        .hexagons {
-            top: -80%;
-        }
-  
-        .hexagon-text {
-            top: -80%;
-        }
-  
-        .skills-table {
-            top: -90%;
-        }
-    }
-
-    @media only screen and (min-width: 1400px) and (max-height: 805px) {
-
-        #heading-text {
-            left: 10%;
-        }
-    }
-
-    @media only screen and (min-width: 1600px) {
-
-        #heading-text {
-            left: 32%;
-            
-        }
-    
-        .head-h4 {
-            left: 33%;
-        }
-
-        .about-section {
-            padding-top: 0;
-        }
-
-        .hexagons {
-            top: -80%;
-        }
-  
-        .hexagon-text {
-            top: -80%;
-        }
-  
-        .skills-table {
-            top: -90%;
-        }
-
-        .aboout-heading-h1 {
-            margin-top: 200px;
-        }
-
-        .about-p-1 {
-            font-size: 2rem;
-        }
-
-    }
-
-
-  @media only screen and (min-width: 1900px)
-
-  {
-
-    .head-h4 {
-        left: 36%;
-    }
-      #heading-text {
-          left: 35%;
-      }
-
-      .hexagons {
-          top: -70%;
-      }
-
-      .hexagon-text {
-          top: -70%;
-      }
-
-      .skills-table {
-          top: -70%;
-      }
-
-
-      .about-heading-h1 {
-          margin-left: 0;
-      }
-
-      .about-heading-h1::after {
-          left: 1%;
-      }
-
-      .about-p-1 {
-          font-size: 2rem;
-          left: -5%;
-      }
-
-      .about-section {
-        padding-top: 0;
-    }
-    
-  }
-
 
