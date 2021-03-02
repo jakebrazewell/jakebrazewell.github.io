@@ -401,7 +401,7 @@ introButton.addEventListener("click", function() {
 searchForSelectedRecipes()
 autocomplete()
 selectedItemsControl()
-// getRandomRecipeData()
+getRandomRecipeData()
 
 
 

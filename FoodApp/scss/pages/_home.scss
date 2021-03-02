@@ -35,12 +35,15 @@
     }
 
     &__input {
-        width: 90%;
+        width: 37rem;
         height: 4rem;
         align-self: center;
-        background-color: variables.$primary-white;
+        // background-color: variables.$primary-white;
         border-radius: 5px;
         margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        ;
 
         & i {
             font-size: 2rem;
@@ -52,7 +55,7 @@
             background-color: variables.$primary-purple;
             color: variables.$primary-white;
             height: 4rem;
-            width: 6rem;
+            width: 20%;
             position: absolute;
             right: 1.5rem;
             border-top-right-radius: 5px;
@@ -60,6 +63,7 @@
             line-height: 4rem;
             text-align: center;
             font-size: 2rem;
+            z-index: 250;
 
             &:active {
                 color: variables.$primary-purple;
@@ -108,18 +112,23 @@
 }
 
 #main-search {
-    width: 70%;
+    width: 80%;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 1rem;
     height: 4rem;
     border: none;
     color: variables.$primary-heading-colour;
     font-size: 2rem;
-    margin-left: 1rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     z-index: 750;
+    -webkit-appearance: none;
 
     &:focus {
         outline-width: 0;
+        
     }
     
 }
@@ -277,30 +286,35 @@
 
 }
 
-
-.autocomplete__list {
-    width: 100%;
-    background-color: variables.$primary-white;
-    position: relative;
-    z-index: 500;
-    top: -0.3rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    &--item {
-        height: 4rem;
-        line-height: 4rem;
-        font-size: 1.5rem;
-        padding-left: 1rem;
-        color: variables.$primary-heading-colour;
-
-        &:active {
-            background-color: variables.$primary-purple;
-            color: variables.$primary-white;
+.autocomplete {
+    width: 90vw;
+    
+    &__list {
+        width: 80%;
+        background-color: variables.$primary-white;
+        position: relative;
+        z-index: 500;
+        top: -0.3rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+        &--item {
+            height: 4rem;
+            line-height: 4rem;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            color: variables.$primary-heading-colour;
+    
+            &:active {
+                background-color: variables.$primary-purple;
+                color: variables.$primary-white;
+            }
         }
+    
     }
-
 }
+
+
 
 
 
