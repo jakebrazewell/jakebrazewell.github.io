@@ -193,7 +193,6 @@ function selectedItemsControl() {
         window.addEventListener("touchend", function(e) {
             if (e.target.classList.contains("autocomplete__list--item")) {
                 console.log(e.target);
-                searchButton.style.backgroundColor = "blue";
                 let targetValue = e.target.textContent
                 createSelectedItem(targetValue)
                 searchInput.value = "";
