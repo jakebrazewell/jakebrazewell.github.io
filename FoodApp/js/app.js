@@ -190,8 +190,10 @@ function autocomplete() {
 function selectedItemsControl() {
     // gets the item from the autocomplete list
     function getListItem() {
-        window.addEventListener("click touch", function(e) {
+        window.addEventListener("click", function(e) {
             if (e.target.classList.contains("autocomplete__list--item")) {
+                console.log(e.target);
+                searchButton.style.backgroundColor = "red";
                 let targetValue = e.target.textContent
                 // selectedIngredientsArray.push(targetValue);
                 createSelectedItem(targetValue)
