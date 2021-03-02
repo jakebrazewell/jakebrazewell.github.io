@@ -192,30 +192,18 @@ function selectedItemsControl() {
     function getListItem() {
         window.addEventListener("touchend", function(e) {
             if (e.target.classList.contains("autocomplete__list--item")) {
-                console.log(e.target);
                 let targetValue = e.target.textContent
                 createSelectedItem(targetValue)
                 searchInput.value = "";
                 let list = document.querySelector(".autocomplete__list")
                 list.classList.add("hide-content");
             }
-            // if (searchInput === document.activeElement) {
-            //     console.log("test");
-            //     let list = document.querySelector(".autocomplete__list")
-            //     if(list) {
-            //         list.classList.remove("hide-content");
-            //     }
-            // // hides list if clicked off the list 
-            // } 
             else if (!e.target.classList.contains("autocomplete__list--item")) {
-                console.log("test2")
                 let list = document.querySelector(".autocomplete__list")
                 if(list) {
                     list.classList.add("hide-content");
                 }
-            }
-            
-            
+            } 
         })
     }
     
