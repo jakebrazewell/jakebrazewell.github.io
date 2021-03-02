@@ -190,7 +190,7 @@ function autocomplete() {
 function selectedItemsControl() {
     // gets the item from the autocomplete list
     function getListItem() {
-        window.addEventListener("click", function(e) {
+        window.addEventListener("click touch", function(e) {
             if (e.target.classList.contains("autocomplete__list--item")) {
                 let targetValue = e.target.textContent
                 // selectedIngredientsArray.push(targetValue);
