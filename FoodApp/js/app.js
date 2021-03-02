@@ -190,23 +190,26 @@ function autocomplete() {
 function selectedItemsControl() {
     // gets the item from the autocomplete list
     function getListItem() {
-        window.addEventListener("click touchstart", function(e) {
+        window.addEventListener("touchend", function(e) {
             if (e.target.classList.contains("autocomplete__list--item")) {
                 console.log(e.target);
-                searchButton.style.backgroundColor = "green";
+                searchButton.style.backgroundColor = "blue";
                 let targetValue = e.target.textContent
-                // selectedIngredientsArray.push(targetValue);
                 createSelectedItem(targetValue)
-                console.log(selectedIngredientsArray)
                 searchInput.value = "";
-            }
-            if (searchInput === document.activeElement) {
                 let list = document.querySelector(".autocomplete__list")
-                if(list) {
-                    list.classList.remove("hide-content");
-                }
-            // hides list if clicked off the list 
-            } else if (searchInput !== document.activeElement) {
+                list.classList.add("hide-content");
+            }
+            // if (searchInput === document.activeElement) {
+            //     console.log("test");
+            //     let list = document.querySelector(".autocomplete__list")
+            //     if(list) {
+            //         list.classList.remove("hide-content");
+            //     }
+            // // hides list if clicked off the list 
+            // } 
+            else if (!e.target.classList.contains("autocomplete__list--item")) {
+                console.log("test2")
                 let list = document.querySelector(".autocomplete__list")
                 if(list) {
                     list.classList.add("hide-content");
