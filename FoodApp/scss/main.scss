@@ -1,0 +1,20 @@
+
+// Base styles
+@use 'base/base';
+
+// Components
+@use 'components/loader';
+
+// Typography 
+@use 'base/typography';
+
+// Pages
+@use 'pages/intro';
+@use 'pages/home';
+@use 'pages/recipe-list';
+
+//layout 
+@use 'layout/navigation';
+
+// Vendors
+@use 'vendors/flickity';

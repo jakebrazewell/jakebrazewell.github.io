@@ -1,0 +1,110 @@
+@use '../abstracts/variables';
+
+.recipeList {
+    position: absolute;
+    width: 100vw;
+    transition: all 0.5s;
+
+    &__title {
+        background-color: variables.$primary-purple-light;
+        height: 20rem;
+        z-index: 100;
+
+        & h5 {
+            font-size: 1.8rem;
+            color: variables.$primary-heading-colour;
+            margin-left: 3rem;
+            padding-top: 2rem;
+        }
+
+        & h4 {
+            margin-left: 3rem;
+            padding-top: 2.5rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__content {
+        z-index: 200;
+        height: 30rem;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        position: relative;
+        top: -2.5rem;
+        background-color: variables.$primary-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__recipe {
+        width: 85vw;
+        height: 13rem;
+        // border: 1px solid black;
+        border-radius: 10px;;
+        position: relative;
+        justify-self: center;
+        top: -13rem;
+        display: flex;
+        overflow: hidden;
+        background-color: variables.$primary-grey-light;
+        margin-top: 2rem;
+    }
+
+    &__image {
+        width: 30%;
+        background-image: url("https://spoonacular.com/recipeImages/637458-556x370.jpg");
+        background-size: cover;
+        background-position: 10% 0%;
+       
+    }
+
+    &__text {
+        position: relative;
+        width: 95%;
+
+        & h5 {
+            margin-left: 2rem;
+            padding-top: 1rem;
+            font-size: 2rem;
+            color: variables.$primary-heading-colour;
+            width: 90%;
+        }
+    }
+
+    &__icons {
+        position: absolute;
+        display: flex;
+        width: 70%;
+        bottom: 1rem;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+
+        & i {
+            color: variables.$primary-purple;
+        }
+
+        & span {
+            font-weight: 500;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        background-color: variables.$primary-purple;
+        bottom: 1rem;
+        right: 1rem;
+        border-radius: 50%;
+
+        & i {
+            color: variables.$primary-white;
+            font-size: 2rem;
+            position: relative;
+            left: 1rem;
+            top: 0.5rem;
+        }
+    }
+}

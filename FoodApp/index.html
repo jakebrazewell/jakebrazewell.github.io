@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Food App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c831840dbe.js"></script>
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="navigation__search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="navigation__home">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="navigation__fav">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="navigation__help">
+                <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="navigation__user">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+        <div class="intro hide-content">
+            <div class="intro__square intro__square--1"></div>
+            <div class="intro__square intro__square--2"></div>
+            <div class="intro__square intro__square--3"></div>
+            <div class="intro__square intro__square--4"></div>
+            <div class="intro__square intro__square--5"></div>
+            <div class="intro__square intro__square--6"></div>
+            <div class="intro__items">
+                <div class="intro__logo">
+                    <div class="intro__logo--box">
+                        <div class="intro__logo--image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="intro__logo--text">
+                            <h1>Food <br> App</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__text">
+                    <p>Need to do a Shop?<p>
+                    <p>Not sure what to cook??</p>
+                    <br>
+                    <p>We've got you covered.</p>
+                </div>
+                <div class="intro__button">
+                    <div class="intro__button--box">
+                        <a>Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="loader hidden">
+            <i class="fas fa-spinner"></i>
+        </div>
+
+        <div class="home">
+            <div class="search">
+                <div class="search__title">
+                    <h2>Hi There!</h2>
+                    <p>Need Help?</p>
+                </div>
+                <div class="search__input">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="main-search" type="text" placeholder="Search Ingredients">
+                        <a class="search__input--button">Go</a>
+                        <!-- <div class ="autocomplete__list">
+                            <div class="autocomplete__list--item">Hi</div>
+                            <div class="autocomplete__list--item">Hi</div>
+                            <div class="autocomplete__list--item">Hi</div>
+                            <div class="autocomplete__list--item">Hi</div>
+                            <div class="autocomplete__list--item">Hi</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="search__validationText hide-content">
+                    Please enter some ingredients
+                </div>
+                <div class="search__selected">
+                    <!-- <div class="search__selected--item">
+                        <i class="fas fa-times"></i>
+                        <p>Cheese</p>
+                    </div>
+                    <div class="search__selected--item">
+                        <i class="fas fa-times"></i>
+                        <p>Eggs</p>
+                    </div>
+                    <div class="search__selected--item">
+                        <i class="fas fa-times"></i>
+                        <p>Milk</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="commonIngredients">
+                <div class="main-carousel" data-flickity='{ "groupCells": true }'>
+                    <div class="carousel-cell">
+                        <div class="commonItems__item">
+                            <div class="commonItems__imageBox">
+                                <i class="fas fa-bacon"></i>
+                            </div>
+                            <p class="commonItems__item--text">Bacon</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="commonItems__item">
+                            <div class="commonItems__imageBox">
+                                <i class="fas fa-drumstick-bite"></i>                    
+                            </div>
+                            <p class="commonItems__item--text">Chicken</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="commonItems__item">
+                            <div class="commonItems__imageBox">
+                                <i class="fas fa-carrot"></i>                    
+                                <p class="commonItems__item--text">Carrots</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="commonItems__item">
+                            <div class="commonItems__imageBox">
+                                <i class="fas fa-egg"></i>                            
+                                <p class="commonItems__item--text">Eggs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="commonItems__item">
+                            <div class="commonItems__imageBox">
+                                <i class="fas fa-fish"></i>                            
+                                <p class="commonItems__item--text">Fish</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="commonItems__item">
+                            <div class="commonItems__imageBox">
+                                <i class="fas fa-cheese"></i>                            
+                                <p class="commonItems__item--text">Cheese</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="random">
+                <div class="random__title">
+                    <h4>Try Something New?</h4>
+                </div>
+                <div class="random__boxes">
+                    <div class="random__box random__box--1">
+                        <!-- <p class="random__text">Asian Salmon Burgers With Tangy Ginger Lime Sauce</p>
+                        <div class="random__arrowbox">
+                            <i class="fas fa-chevron-right random__arrow"></i>
+                        </div> -->
+                    </div>
+                    <div class="random__box random__box--2">
+    
+                    </div>
+                </div>
+                <div class="random__boxes">
+                    <div class="random__box random__box--3">
+
+                    </div>
+                    <div class="random__box random__box--4">
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="favourites">
+                <div class="favourites__title">
+                    <h4>Favourites</h4>
+                </div>
+                <div class="favourites-carousel" data-flickity='{ "groupCells": true }'>
+                    <div class="carousel-cell cell-1">
+                        <div class="favourites__box">
+
+                        </div>
+                    </div>
+                    <div class="carousel-cell cell-2">
+                        <div class="favourites__box">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-cell cell-3">
+                        <div class="favourites__box">
+                            
+                        </div>
+                    </div>
+                    ...
+                  </div>
+
+            </div>
+
+        </div>
+        <div class="recipeList hidden">
+            <div class="recipeList__title">
+                <h5 class="recipeList__return">&#8592; Back Home</h5>
+                <h4>Suggested Recipes</h4>
+            </div>
+            <div class="recipeList__content">
+                <!-- <div class="recipeList__recipe">
+                    <div class="recipeList__image">
+                        
+                    </div>
+                    <div class="recipeList__text">
+                        <h5>Asian Salmon Burgers With Tangy Ginger Lime Sauce</h5>
+                        <div class="recipeList__icons">
+                            <p class="recipeList__icons--likes"><i class="far fa-heart"></i><span> 7</span></p>
+                            <p class="recipeList__icons--used"><i class="far fa-check-circle"></i> <span>3</span></p>
+                            <p class="recipeList__icons--missing"><i class="far fa-times-circle"></i> <span>2</span></p>
+                        </div>
+                        <div class="recipeList__info"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <script src="js/app.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="js/flickity.js"></script>
+
+    </body>
+</html>

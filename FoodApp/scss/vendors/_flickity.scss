@@ -1,0 +1,40 @@
+.carousel {
+    background: #EEE;
+    
+  }
+
+.commonIngredients .carousel-cell {
+
+    .carousel-cell {
+        width: 25%;
+        height: 150px;
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+        }
+}
+
+.favourites .carousel-cell {
+    width: 15rem;
+    height: 15rem;
+    margin-right: 3rem;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.favourites .cell-2 {
+    position: absolute; 
+    left: 47.5% !important;
+}
+.favourites .cell-3 {
+    position: absolute; 
+    left: 94.5% !important;
+}
+
+
+.flickity-page-dots {
+    display: none;
+}
+.flickity-button {
+    display: none;
+}

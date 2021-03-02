@@ -1,0 +1,121 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.intro {
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    background-color: variables.$primary-purple;
+    font-size: 2rem;
+    transition: opacity .5s;
+}
+
+.intro__items {
+    position: relative;
+    height: 100%; 
+    @include mixins.flexCenter();   
+    flex-direction: column;
+}
+
+.intro__logo {
+   height: 50%;
+   width: 50%;
+   @include mixins.flexCenter();
+   color: variables.$primary-purple;
+
+   &--box {
+    background-color: variables.$primary-white;
+    width: 40vw;
+    height: 15vh;
+    border-radius: 10px;
+    transform: rotate(5deg);
+    @include mixins.flexCenter();
+    justify-content: space-evenly;
+   }
+
+   &--image {
+    color: variables.$primary-purple;
+    font-size: 5rem;
+   }
+
+   &--text {
+       line-height: 4rem;
+   }
+}
+
+.intro__text {
+    height: 15%;
+    @include mixins.flexCenter();
+    flex-direction: column;
+    color: variables.$primary-white;
+    font-weight: 500;
+}
+
+.intro__button {
+    height: 15%;
+    @include mixins.flexCenter();
+    align-items: flex-end;
+
+    &--box {
+        color: variables.$primary-purple;
+        background-color: variables.$primary-white;
+        width: 60vw;  
+        text-align: center;
+        height: 5rem;
+        line-height: 5rem;
+        border-radius: 10px;
+        font-weight: 400;
+    }
+
+    &--box:active {
+        color: variables.$primary-white;
+        background-color: variables.$primary-purple;
+        border: 1px solid variables.$primary-white;
+    }
+}
+
+.intro__square {
+    background-color: variables.$primary-purple-dark;
+    border-radius: 10px;
+    position: absolute;
+
+    &--1 {
+        top: -2rem;
+        left: -2rem;
+        width: 8rem;
+        height: 8rem;
+    }
+    &--2 {
+        top: 15rem;
+        left: 25rem;
+        width: 8rem;
+        height: 8rem;
+    }
+    &--3 {
+        top: 13rem;
+        left: 10rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    &--4 {
+        top: 10rem;
+        left: 30rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 5px;
+    }
+    &--5 {
+        top: 30rem;
+        left: 7rem;
+        width: 7rem;
+        height: 7rem;
+    }
+    &--6 {
+        top: 34rem;
+        left: 30rem;
+        width: 5rem;
+        height: 5rem;
+    }
+ 
+}

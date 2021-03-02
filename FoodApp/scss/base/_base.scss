@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.hide-content {
+    display: none;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.slide-left {
+    transform: translateX(-100%);
+}
+.slide-right {
+    transform: translateX(100%);
+}
+
+
+
+    
