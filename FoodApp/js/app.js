@@ -190,10 +190,10 @@ function autocomplete() {
 function selectedItemsControl() {
     // gets the item from the autocomplete list
     function getListItem() {
-        window.addEventListener("click", function(e) {
+        window.addEventListener("click touchstart", function(e) {
             if (e.target.classList.contains("autocomplete__list--item")) {
                 console.log(e.target);
-                searchButton.style.backgroundColor = "red";
+                searchButton.style.backgroundColor = "green";
                 let targetValue = e.target.textContent
                 // selectedIngredientsArray.push(targetValue);
                 createSelectedItem(targetValue)
@@ -403,7 +403,7 @@ introButton.addEventListener("click", function() {
 searchForSelectedRecipes()
 autocomplete()
 selectedItemsControl()
-getRandomRecipeData()
+// getRandomRecipeData()
 
 
 
