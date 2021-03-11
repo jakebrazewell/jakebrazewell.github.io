@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hide-content {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+h4,
+p {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.light {
+  width: 100vw;
+  height: 100vw;
+}
+
+/*# sourceMappingURL=style.css.map */
