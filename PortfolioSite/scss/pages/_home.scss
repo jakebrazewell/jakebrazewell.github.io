@@ -1,0 +1,43 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+
+
+.home {
+    position: relative;
+
+    &__title {
+        position: absolute;
+        top: 40%;
+        left: 1%;
+
+        &--logo {
+            height: 17rem;
+        }
+
+        & p {
+            font-size: 2.5rem;
+            margin-left: 5rem;
+        }
+
+        
+    }
+
+    &__items {
+        &--ring1 {
+            position: absolute;
+            top: 65%;
+            left: 40%;
+        }
+        &--ring2 {
+            position: absolute;
+            top: 55%;
+            left: 30%;
+        }
+        &--board {
+            position: absolute;
+            top: 45%;
+            left: 40%;
+        }
+    }
+}
