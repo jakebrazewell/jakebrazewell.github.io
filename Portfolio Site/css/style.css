@@ -33,9 +33,42 @@ p {
   text-transform: capitalize !important;
 }
 
+.home {
+  position: relative;
+}
+.home__title {
+  position: absolute;
+  top: 40%;
+  left: 1%;
+}
+.home__title--logo {
+  height: 17rem;
+}
+.home__title p {
+  font-size: 2.5rem;
+  margin-left: 5rem;
+}
+.home__items--ring1 {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+}
+.home__items--ring2 {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+}
+.home__items--board {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
 .light {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
+  background-image: url("../img/illustration/light-illustration.png");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
